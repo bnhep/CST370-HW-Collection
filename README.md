@@ -2,124 +2,62 @@
 
 This repository contains programs developed for my algorithms and data structures coursework. Each project focuses on a specific algorithmic technique, data structure, or problem-solving strategy.
 
-## Projects
+## String Processing
 
-### Palindrome
+### hw1_1 — Palindrome
 
-This program determines whether a string is a palindrome. It removes non-alphanumeric characters, converts the remaining characters to lowercase, and compares characters from the beginning and end of the string moving toward the center.
+This program determines whether an input string is a palindrome. It removes symbols and spaces, converts the remaining characters to lowercase, and compares characters from the beginning and end of the string while moving toward the center.
 
-Techniques demonstrated:
+## Sorting and Array Algorithms
 
-- String processing
-- Two-pointer comparison
-- Input normalization
+### hw2_1 — Closest Distance
 
-### Closest Pair
+This program finds the closest pair of numbers from a collection of integers. The input values are sorted in ascending order, and adjacent values are compared to determine the minimum distance and all pairs that share that distance.
 
-This program finds the closest pair of numbers in a collection. The input is sorted first, then adjacent values are compared to determine the minimum distance.
+### hw2_2 — Ascending Order
 
-Techniques demonstrated:
+This program sorts a collection of integers in ascending order and displays consecutive values as ranges. For example, consecutive values such as `1, 2, 3` are displayed as `1-3`.
 
-- Array sorting
-- Minimum-distance comparison
-- Sequential array traversal
+### hw4_1 — Sorting Performance Comparison
 
-### Consecutive Range Compression
+This program compares the performance of Insertion Sort and Quick Sort. It generates input in ascending, descending, or random order, sorts the values using multiple algorithms, measures execution time, and ranks the results.
 
-This program sorts a collection of integers and compresses consecutive values into ranges. For example, values such as `1, 2, 3, 7, 8` are displayed as `1-3 7-8`.
-
-Techniques demonstrated:
-
-- Sorting
-- Array traversal
-- Consecutive-sequence detection
-
-### Sorting Performance Comparison
-
-This program compares the performance of several sorting algorithms using ascending, descending, and randomly generated input.
-
-Algorithms included:
+The program includes:
 
 - Insertion Sort
-- Quick Sort
+- Quick Sort using the first element as the pivot
 - Quick Sort using Median-of-Three pivot selection
 
-The program measures execution time and compares the performance of the algorithms under different input arrangements.
+## Graph Algorithms
 
-### Depth-First Search
+### hw3_1 — Depth-First Search
 
-This program performs a recursive Depth-First Search traversal on a directed graph represented by an adjacency list. Each vertex is assigned a visitation number based on the order in which it is visited.
+This program performs a recursive Depth-First Search on a graph represented by an adjacency list. Vertices are marked according to the order in which they are visited.
 
-Techniques demonstrated:
+### hw3_2 — Traveling Salesman Problem
 
-- Graph traversal
-- Recursion
-- Adjacency lists
-- Vertex marking
+This program solves the Traveling Salesman Problem using a brute-force permutation approach. It generates every possible order of the vertices, calculates the total cost of each route, and selects the lowest-cost route that returns to the starting vertex.
 
-### Traveling Salesman Problem
+### hw4_2 — Topological Sorting
 
-This program solves a weighted Traveling Salesman Problem using brute force. It generates every possible permutation of the vertices, calculates the total cost of each route, and selects the least expensive route that returns to the starting vertex.
+This program performs a topological sort using Kahn’s Algorithm. It calculates the in-degree of each vertex and uses a queue to process vertices with no incoming edges. If the graph contains a cycle, the program reports that no valid ordering exists.
 
-Techniques demonstrated:
+### hw6_2 — Floyd-Warshall Algorithm
 
-- Brute-force search
-- Permutations
-- Weighted graphs
-- Adjacency matrices
+This program uses the Floyd-Warshall Algorithm to calculate the shortest paths between every pair of vertices in a weighted graph. It stores the graph in a matrix and repeatedly checks whether using an intermediate vertex creates a shorter path.
 
-### Topological Sort
+## Data Structures
 
-This program performs a topological sort using Kahn’s algorithm. It calculates the in-degree of each vertex and uses a queue to process vertices with no remaining prerequisites. If a cycle exists, the program reports that no valid ordering is possible.
+### hw5_1 — Max Heap Operations
 
-Techniques demonstrated:
+This program builds and manipulates a Max Heap. It checks whether an input array is already a heap, builds a heap using the bottom-up method when necessary, and supports insertion, deletion of the maximum value, and heap display operations.
 
-- Directed graphs
-- In-degree calculation
-- Queues
-- Cycle detection
+### hw5_2 — Linear Probing Hash Table
 
-### Floyd-Warshall
+This program implements a hash table using modular hashing and linear probing to resolve collisions. It supports inserting keys, searching for keys, displaying table entries, checking the table size, and rehashing when the load factor becomes greater than 0.5.
 
-The Floyd-Warshall algorithm calculates the shortest paths between every pair of vertices in a weighted graph. The program uses a matrix representation and progressively considers each vertex as an intermediate point.
+## Dynamic Programming
 
-Techniques demonstrated:
+### hw6_1 — Coin Collection
 
-- Dynamic programming
-- All-pairs shortest paths
-- Weighted adjacency matrices
-
-### Max Heap
-
-This program creates and manipulates a max heap. It supports bottom-up heap construction, insertion, deletion of the maximum value, displaying the maximum value, and displaying the complete heap.
-
-Techniques demonstrated:
-
-- Heap data structures
-- Bottom-up heap construction
-- Heap insertion
-- Heap deletion
-- Sift-up and sift-down operations
-
-### Linear Probing Hash Table
-
-This program implements a hash table using linear probing to resolve collisions. It supports insertion, searching, table status checks, and automatic rehashing when the load factor exceeds 0.5.
-
-Techniques demonstrated:
-
-- Hash tables
-- Modular hashing
-- Linear probing
-- Collision resolution
-- Rehashing
-
-### Coin Collection
-
-This program solves the Coin Collection problem using dynamic programming. A robot starts in the upper-left cell of a matrix and can move only right or down. The program calculates the maximum number of coins that can be collected and reconstructs an optimal path.
-
-Techniques demonstrated:
-
-- Dynamic programming
-- Matrix-based recurrence relations
-- Optimal-path reconstruction
-- Backtracking
+This program solves the Coin Collection problem using dynamic programming. A robot begins in the upper-left cell of a matrix and can move only right or down. The program calculates the maximum number of coins that can be collected and reconstructs an optimal path through the matrix.
